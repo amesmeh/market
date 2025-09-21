@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>برنامج السوبر ماركت</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <aside class="sidebar" id="sidebar"></aside>
+      <main class="main">
+        <header class="topbar">
+          <div style="display:flex;align-items:center;gap:10px">
+            <button id="toggle-sidebar" class="button ghost" title="إظهار/إخفاء القائمة">☰</button>
+            <!-- العنوان سيتم حقنه ديناميكياً داخل المنطقة الرئيسية فوق التبويبات -->
+          </div>
+          <div style="display:flex;align-items:center;gap:10px">
+            <div class="stats" id="top-stats"></div>
+            <button id="toggle-theme" class="button ghost" title="تبديل الثيم">🌞/🌙</button>
+          </div>
+        </header>
+        <section class="content" id="content">
+          <!-- سيتم تعبئة المحتوى ديناميكياً -->
+        </section>
+      </main>
+    </div>
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+    <script src="assets/app.js"></script>
+  </body>
+</html>
